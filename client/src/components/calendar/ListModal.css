@@ -1,0 +1,89 @@
+#listModal {
+  margin-top: 5vh;
+}
+
+#controlButtons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+#controlButtons button {
+  width: 160px;
+}
+
+details {
+  cursor: default;
+  padding: 0px;
+  margin: 10px;
+  box-shadow: #E9ECEF 0px 2px 0px 0px;
+  background: #F8F9FA;
+}
+
+summary {
+  cursor: pointer;
+  text-align: center;
+  font-size: large;
+  padding: 5px;
+}
+
+summary:hover {
+  background: #E9ECEF;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modalHeader button {
+  height: 2.5em;
+}
+
+.modalHeader h2 {
+  font-size: 2.125rem;
+}
+
+@media only screen and (max-width: 778px) {
+  .modalHeader h4 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .modalHeader h4 {
+    font-size: 1.4rem;
+  }
+}
+
+.delete-button {
+  background: #f44336;
+  color: #f0f0f0;
+}
+
+.mealDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiAccordion-root {
+  margin-top: 10px;
+}
+
+.MuiAccordionDetails-root {
+  flex-direction: column;
+}
+
+.modalBody {
+  width: 100%;
+  height: 90%;
+}
+
+.modalBodyEmpty {
+  border: dashed #c0c0c0 2px;
+  color: #c0c0c0;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,88 @@
+#mealModal {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#mealModal .modalHeader {
+    grid-column: 1 / span 12;
+}
+
+#mealSelect {
+    display: block;
+}
+
+#mealModalForm {
+    grid-column: 3 / span 10;
+    grid-row: 2 / span 10;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+#mealModalForm h5 {
+    margin-top: 10px;
+}
+
+#mealModalForm button {
+    margin: 5px;
+}
+
+.modalFooterButtons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modalFooterButtons button {
+    margin: 10px;
+}
+
+.list-holder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-holder ul {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+.list-holder hr {
+    border-style: ridge;
+    border-color: #e0e0e0;
+}
+
+@media only screen and (min-width: 768px) {
+    .list-holder hr {
+        display: none;
+    }
+}
+
+.ingredientContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.MuiFormControl-root:nth-child(2){
+    justify-content: center;
+}
+
+.input-field {
+    margin-top: 10px !important;
+}
+
+.qInput {
+    margin: 5px !important;
+    width: 100px;
+}
+
+.nInput {
+    margin: 5px !important;
+    min-width: 150px;
+}

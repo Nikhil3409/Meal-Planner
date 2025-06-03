@@ -1,0 +1,89 @@
+#shoppingModal {
+  margin-top: 5vh;
+}
+
+#shoppingModal h3 {
+  font-size: 1.5rem !important;
+}
+
+.shoppingControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shoppingControls>* {
+  margin: 0px 5px;
+}
+
+#range-select {
+  font-family: inherit;
+}
+
+#shoppingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#shoppingContainer li{
+  list-style: '- ';
+}
+
+#exportContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+#exportContainer button {
+  margin: 10px 5px;
+}
+
+#dateRangeContainer {
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+
+#returnButton {
+  float: right;
+}
+
+.tablediv {
+  display: grid;
+  place-content: center;
+  margin: 20px 0px;
+}
+
+.tablediv paper {
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 190px;
+}
+
+.tablediv .MuiTypography-body1 {
+  font-size: 1.25rem;
+}
+
+.tablediv .MuiTypography-body2 {
+  font-size: 1rem;
+}
+
+paper > table {
+  max-width: 650px;
+  min-width: 400px;
+}
+
+.primaryBack {
+  background: #303F9F;
+}
+
+.row {
+  background: #f5f5f5;
+}
+
+.row:nth-child(even) {
+  background: #f0f0f0;
+}

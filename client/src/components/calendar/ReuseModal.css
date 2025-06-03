@@ -1,0 +1,33 @@
+#reuse-dialog-title {
+  background: #303f9f;
+  color: #f0f0f0;
+  box-shadow: black 0px 1px 3px 1px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#reuse-dialog-content {
+  padding: 0;
+  max-height: 40vh;
+}
+
+.reuse-list-text {
+  display: block;
+  max-width: 25vw;
+}
+
+.reuse-list-text>span, .reuse-list-text>p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#reuse-meal-select {
+  min-width: 40px;
+}
+
+#reuse-meal-submit {
+  height: 56px;
+}
