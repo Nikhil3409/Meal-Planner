@@ -10,15 +10,8 @@
     "docker:app:up": "docker-compose up --build",
     "docker:app:down": "docker-compose down"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JLambertazzo/MealPlanner.git"
-  },
   "author": "Nikhil Bhosale",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JLambertazzo/MealPlanner/issues"
-  },
   "homepage": "https://github.com/JLambertazzo/MealPlanner#readme",
   "dependencies": {
     "@types/convert-units": "^2.3.5",
