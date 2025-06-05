@@ -8,7 +8,7 @@ const router = express.Router();
 
 const { ObjectID } = require("mongodb");
 const bodyParse = require("body-parser");
-const { mongoose } = require("../db/mongoose");
+import mongoose from "../db/mongoose";
 const { User } = require("../db/user");
 
 import session from "express-session";
@@ -35,13 +35,15 @@ function isMongoError(error: Error) {
 }
 
 const mongoChecker = (req: Request, res: Response, next: NextFunction) => {
-  if (mongoose.connection.readyState !== 1) {
-    log("Issue with mongoose connection");
-    res.status(500).send("Internal server error");
-    return false;
+  // console.log("Mongoose connection state:", mongoose?.connection?.readyState);
+  if (!mongoose?.connection || mongoose.connection.readyState !== 1) {
+    console.log("Issue with mongoose connection");
+    return res.status(500).send("Internal server error");
   }
   next();
 };
+
+
 
 const idChecker = async (req: Request, res: Response, next: NextFunction) => {
   if (!ObjectID.isValid(req.params.id)) {
